@@ -1,0 +1,73 @@
+/* PostCard.module.css */
+
+/* Estrutura básica e tipografia */
+.postCard {
+    background-color: #f4f4f9; /* Um cinza claro que é suave para os olhos */
+    color: #333; /* Cor de texto escura para contraste */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cabeçalho do post */
+.postCard h3 {
+    color: #2a6496; /* Azul para destacar o título */
+    margin-bottom: 10px;
+}
+
+/* Descrição do post */
+.postCard p {
+    color: #666; /* Cinza mais escuro para o texto */
+    line-height: 1.5;
+}
+
+/* Informações sobre a publicação */
+.publicationInfo {
+    font-size: 14px;
+    color: #888; /* Cinza claro para informação menos proeminente */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Comentários e curtidas */
+.comments, .likes, .dislikes {
+    font-size: 14px;
+    color: #555; /* Um tom de cinza intermediário */
+    margin-top: 5px;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 600px) {
+    .postCard {
+        padding: 30px;
+        margin: 20px auto;
+        max-width: 80%;
+    }
+}
+
+/* Botões ou ações interativas */
+.button {
+    background-color: #4CAF50; /* Verde para ações positivas como curtir */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:disabled {
+    background-color: #ccc; /* Desabilitado para mostrar que não é clicável */
+}
+
+.button.dislike {
+    background-color: #f44336; /* Vermelho para ações negativas como descurtir */
+}
