@@ -1,6 +1,6 @@
 import "./App.css";
 import React from 'react';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage'
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
           <a className="navLink" href="https://globo.com">Novo Post</a>
         </nav>
       </div>
-      <HomePage />
+      < HomePage />
     </>
   );
 }
