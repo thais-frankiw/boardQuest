@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './PostCard.module.css'; 
 
-const PostCard = ({ post }) => {
+const PostCard = (props) => {
+  const post = props.post;
+  
   // Função para calcular a diferença em dias entre a data de publicação e a data atual
   const getDateDifferenceInDays = (date) => {
     const publicationDate = new Date(date);
@@ -21,10 +23,6 @@ const PostCard = ({ post }) => {
       <div>
         <p>{post.description.substring(0, 100)}...</p>
       </div>
-      <div className={styles.publicationInfo}>
-        <div>Publicado por: {post.creatorUserName}</div>
-        <div>Publicado: {publicationDateMessage}</div>
-      </div>
       <div className={styles.comments}>
         Comentários: {post.comments.length > 0 ? post.comments.length : 'Sem comentários.'}
       </div>
@@ -33,11 +31,15 @@ const PostCard = ({ post }) => {
       </div>
       {post.numberOfDislikes != null && (
         <div className={styles.dislikes}>
-          Descurtidas: {post.numberOfDislikes}
+;          Descurtidas: {post.numberOfDislikes}
         </div>
       )}
+      <div className={styles.publicationInfo}>
+        <div>Publicado por: {post.creatorUserName}</div>
+        <div>Publicado: {publicationDateMessage}</div>
+      </div>
     </div>
   );
-};
+}
 
 export default PostCard;

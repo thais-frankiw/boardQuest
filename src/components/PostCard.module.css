@@ -20,7 +20,7 @@
 /* Descrição do post */
 .postCard p {
     color: #666; /* Cinza mais escuro para o texto */
-    line-height: 1.5;
+    line-height: 1.5; 
 }
 
 /* Informações sobre a publicação */
@@ -71,3 +71,4 @@
 .button.dislike {
     background-color: #f44336; /* Vermelho para ações negativas como descurtir */
 }
+
