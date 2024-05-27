@@ -1,4 +1,4 @@
-import PostCard from './PostCard.jsx';
+import PostCard from './PostCard';
 
 const title = {
   color: '#ff8c00',
